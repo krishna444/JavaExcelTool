@@ -1,0 +1,19 @@
+
+fsquid:CallToDeprecatedMethode"7Remove this use of "getCellTypeEnum"; it is deprecated.(µß™é8˜øøá-
+[
+squid:S106g"9Replace this use of System.out or System.err by a logger.(›’·Æşÿÿÿÿ8˜øøá-
+‰squid:S32525"fUse static access with "org.apache.poi.ss.formula.BaseFormulaEvaluator" for "evaluateAllFormulaCells".(üØ˜Üøÿÿÿÿ8Ç¯÷˜á-
+vsquid:S3008"XRename this field "TEMPLATE_FILE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯Û°¥8˜øøá-
+gsquid:UselessImportCheck"<Remove this unused import 'sun.util.calendar.CalendarUtils'.(’¢Ÿà8¤éÑ™á-
+dsquid:S2095%"FUse try-with-resources or close this "Workbook" in a "finally" clause.(Ü°–œ8˜øøá-
+Usquid:S1068"2Remove this unused "DATE_FORMATTER" private field.(ÆüÄ¦øÿÿÿÿ8Ñƒ°™á-
+"squid:SwitchLastCaseIsDefaultChecke"YComplete cases by adding the missing enum constants or add a default case to this switch.(µß™é8˜øøá-
+bsquid:UselessImportCheck"7Remove this unused import 'java.text.SimpleDateFormat'.(ú¡ÙÛ8Ç¶™á-
+_squid:S1075\"ARefactor your code to get this URI from a customizable parameter.(ã­Ö8˜øøá-
+psquid:S00117\"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ã­Ö8˜øøá-
+nsquid:CommentedOutCodeLine<"<This block of commented-out lines of code should be removed.(§„¬øÿÿÿÿ8˜øøá-
+isquid:S1301e"KReplace this "switch" statement by "if" statements to increase readability.(µß™é8˜øøá-
+msquid:S2095^"JUse try-with-resources or close this "XSSFWorkbook" in a "finally" clause.(Åù…øÿÿÿÿ8˜øøá-
+|squid:S3008"YRename this field "DATE_FORMATTER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÆüÄ¦øÿÿÿÿ8ª‘á-
+wsquid:S3008"TRename this field "START_ROW" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(û×¼¦ÿÿÿÿÿ8˜øøá-
+Ssquid:S1191"5Use classes from the Java API instead of Sun classes.(’¢Ÿà8ĞĞ™á-
