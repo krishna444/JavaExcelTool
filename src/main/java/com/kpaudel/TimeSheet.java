@@ -44,7 +44,7 @@ public class TimeSheet {
         calendar.set(Calendar.YEAR,this.year);
         YearMonth yearMonth = YearMonth.of(calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH));
         int day = 0;
-        for (int i = START_ROW; i <= START_ROW + yearMonth.lengthOfMonth() || day<=yearMonth.lengthOfMonth(); i++,++day) {
+        for (int i = START_ROW; i < START_ROW + yearMonth.lengthOfMonth() || day<yearMonth.lengthOfMonth(); i++,++day) {
             Row row = sheet.getRow(i);
             calendar.set(Calendar.DAY_OF_MONTH, day);
             row.getCell(1).setCellValue(this.dateFormat.format(calendar.getTime()));
