@@ -8,6 +8,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import java.io.*;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.time.Month;
 import java.time.YearMonth;
 import java.util.*;
 
@@ -20,15 +21,19 @@ public class TimeSheet {
     private static final String DATE_FORMATTER = "yyyy-MM-dd";
     private static final String MONTH_FORMATTER = "dd/MM/yyyy";
     private static final int START_ROW = 10;
-    private int month;
+
+    private Month month;
     private int year;
     private DateFormat dateFormat;
 
     public TimeSheet(int year, int month) {
-        this.year = year;
-        this.month = month;
-        this.dateFormat = DateFormat.getDateInstance(DateFormat.FULL);
+        this(year,Month.of(month));
+    }
 
+    public TimeSheet(int year, Month month){
+        this.year=year;
+        this.month=month;
+        this.dateFormat = DateFormat.getDateInstance(DateFormat.FULL);
     }
 
     public void create() throws IOException, InvalidFormatException {
@@ -41,7 +46,7 @@ public class TimeSheet {
 
 
         Calendar calendar = Calendar.getInstance();
-        calendar.set(Calendar.MONTH, this.month);
+        calendar.set(Calendar.MONTH, this.month.getValue());
         calendar.set(Calendar.YEAR, this.year);
         YearMonth yearMonth = YearMonth.of(calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH));
         String monthYear=new SimpleDateFormat(MONTH_FORMATTER).format(calendar.getTime());
