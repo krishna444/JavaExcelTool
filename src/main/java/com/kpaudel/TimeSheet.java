@@ -46,9 +46,10 @@ public class TimeSheet {
 
 
         Calendar calendar = Calendar.getInstance();
-        calendar.set(Calendar.MONTH, this.month.getValue());
+        //Calendar Month starts from 0, while Month enum returns 1
+        calendar.set(Calendar.MONTH, this.month.getValue()-1);
         calendar.set(Calendar.YEAR, this.year);
-        YearMonth yearMonth = YearMonth.of(calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH));
+        YearMonth yearMonth = YearMonth.of(calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH)+1);
         String monthYear=new SimpleDateFormat(MONTH_FORMATTER).format(calendar.getTime());
         sheet.getRow(6).getCell(2).setCellValue(monthYear);
         //Navigate the rows

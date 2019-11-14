@@ -1,9 +1,6 @@
 package com.kpaudel;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
+import java.io.*;
 import java.time.Month;
 import java.util.*;
 
@@ -21,7 +18,16 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 public class App 
 {
     public static void main( String[] args ) throws FileNotFoundException, IOException, InvalidFormatException {
-        TimeSheet timeSheet=new TimeSheet(2019, Month.JANUARY);
-        timeSheet.create();
+        //TimeSheet timeSheet=new TimeSheet(2019, Month.NOVEMBER);
+        //timeSheet.create();
+        List<String> items=ExcelUtils.getColumnItems("/home/krishna/Desktop/1und1/Tools/VTRACC.2757_Nutzerkonzept_2019-10-25_V.1.3_neue.xlsx",0,1);
+
+        BufferedWriter writer=new BufferedWriter(new FileWriter("/home/krishna/Desktop/1und1/Tools/VTRACC.2757_Nutzerkonzept_2019-10-25_V.1.3_neue_list.txt"));
+        for(String item: items){
+            writer.append(item);
+            writer.append(";");
+        }
+        writer.close();
+
     }
 }
