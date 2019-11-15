@@ -20,14 +20,14 @@ public class App
     public static void main( String[] args ) throws FileNotFoundException, IOException, InvalidFormatException {
         //TimeSheet timeSheet=new TimeSheet(2019, Month.NOVEMBER);
         //timeSheet.create();
-        List<String> items=ExcelUtils.getColumnItems("/home/krishna/Desktop/1und1/Tools/VTRACC.2757_Nutzerkonzept_2019-10-25_V.1.3_neue.xlsx",0,1);
+        //List<String> items=ExcelUtils.getColumnItems("/home/krishna/Desktop/1und1/Tools/VTRACC.2757_Nutzerkonzept_2019-10-25_V.1.3.xlsx",0,1);
 
-        BufferedWriter writer=new BufferedWriter(new FileWriter("/home/krishna/Desktop/1und1/Tools/VTRACC.2757_Nutzerkonzept_2019-10-25_V.1.3_neue_list.txt"));
-        for(String item: items){
-            writer.append(item);
-            writer.append(";");
-        }
-        writer.close();
+        //BufferedWriter writer=new BufferedWriter(new FileWriter("/home/krishna/Desktop/1und1/Tools/VTRACC.2757_Nutzerkonzept_2019-10-25_V.1.3_list.txt"));
+        //for(String item: items){
+        //    writer.append(item);
+        //    writer.append(",");
+        //}
+        //writer.close();
 
     }
 }
