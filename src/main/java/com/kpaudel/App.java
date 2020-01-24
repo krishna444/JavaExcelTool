@@ -12,22 +12,28 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 /**
- * Hello world!
+ * Start from here
  *
  */
 public class App 
 {
     public static void main( String[] args ) throws FileNotFoundException, IOException, InvalidFormatException {
-        TimeSheet timeSheet=new TimeSheet(2020, Month.FEBRUARY);
-        timeSheet.create();
-        //List<String> items=ExcelUtils.getColumnItems("/home/krishna/Desktop/1und1/Tools/VTRACC.2757_Nutzerkonzept_2019-10-25_V.1.3.xlsx",0,1);
+        //TimeSheet timeSheet=new TimeSheet(2020, Month.FEBRUARY);
+        //timeSheet.create();
+        List<String> items=ExcelUtils.getColumnItems("/home/krishna/Desktop/1und1/1und1/VTRACC/DOTASK-1837/TarifIDsFuerQuickWinV2.xlsx",0,1);
 
-        //BufferedWriter writer=new BufferedWriter(new FileWriter("/home/krishna/Desktop/1und1/Tools/VTRACC.2757_Nutzerkonzept_2019-10-25_V.1.3_list.txt"));
-        //for(String item: items){
-        //    writer.append(item);
-        //    writer.append(",");
-        //}
-        //writer.close();
-
+        BufferedWriter writer=new BufferedWriter(new FileWriter("/home/krishna/Desktop/1und1/1und1/VTRACC/DOTASK-1837/TarifIDsFuerQuickWinV2.txt"));
+        int elementPerLine=7;
+        int count=0;
+        for(String item: items){
+            writer.append(item);
+            writer.append(",");
+            count++;
+            if(count%elementPerLine==0) {
+                writer.append("\n");
+                count = 0;
+            }
+        }
+        writer.close();
     }
 }
