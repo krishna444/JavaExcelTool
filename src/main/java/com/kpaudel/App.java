@@ -18,9 +18,9 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 public class App 
 {
     public static void main( String[] args ) throws FileNotFoundException, IOException, InvalidFormatException {
-        //TimeSheet timeSheet=new TimeSheet(2020, Month.FEBRUARY);
-        //timeSheet.create();
-        List<String> items=ExcelUtils.getColumnItems("/home/krishna/Desktop/1und1/1und1/VTRACC/DOTASK-1837/TarifIDsFuerQuickWinV2.xlsx",0,1);
+        TimeSheet timeSheet=new TimeSheet(2020, Month.JANUARY);
+        timeSheet.create();
+        /*List<String> items=ExcelUtils.getColumnItems("/home/krishna/Desktop/1und1/1und1/VTRACC/DOTASK-1837/TarifIDsFuerQuickWinV2.xlsx",0,1);
 
         BufferedWriter writer=new BufferedWriter(new FileWriter("/home/krishna/Desktop/1und1/1und1/VTRACC/DOTASK-1837/TarifIDsFuerQuickWinV2.txt"));
         int elementPerLine=7;
@@ -34,6 +34,6 @@ public class App
                 count = 0;
             }
         }
-        writer.close();
+        writer.close();*/
     }
 }
