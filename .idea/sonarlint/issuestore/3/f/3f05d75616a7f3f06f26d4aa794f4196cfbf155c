@@ -1,20 +1,0 @@
-
-`squid:S1075ˆ"ARefactor your code to get this URI from a customizable parameter.(ã­Ö8˜øøá-
-osquid:S3776'"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(‚µØ"8áµÜÜä-
-"squid:SwitchLastCaseIsDefaultCheck‘"YComplete cases by adding the missing enum constants or add a default case to this switch.(µß™é8˜øøá-
-Qsquid:S1481I".Remove this unused "cellStyle" local variable.(Ğ½åæıÿÿÿÿ8áµÜÜä-
-nsquid:CommentedOutCodeLineG"<This block of commented-out lines of code should be removed.(¯ÚÙûÿÿÿÿ8áµÜÜä-
-jsquid:S1301‘"KReplace this "switch" statement by "if" statements to increase readability.(µß™é8˜øøá-
-\
-squid:S106“"9Replace this use of System.out or System.err by a logger.(›’·Æşÿÿÿÿ8˜øøá-
-`squid:S1854K"=Remove this useless assignment to local variable "cellStyle".(Ğ½åæıÿÿÿÿ8áµÜÜä-
-Qsquid:S1481K".Remove this unused "cellStyle" local variable.(Ğ½åæıÿÿÿÿ8áµÜÜä-
-nsquid:CommentedOutCodeLineh"<This block of commented-out lines of code should be removed.(§„¬øÿÿÿÿ8˜øøá-
-‰squid:S3252a"fUse static access with "org.apache.poi.ss.formula.BaseFormulaEvaluator" for "evaluateAllFormulaCells".(üØ˜Üøÿÿÿÿ8Ç¯÷˜á-
-qsquid:S00117ˆ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ã­Ö8˜øøá-
-ysquid:S3923H"[Remove this conditional structure or edit its code blocks so that they're not all the same.(§Êæ8áµÜÜä-
-gsquid:CallToDeprecatedMethod‘"7Remove this use of "getCellTypeEnum"; it is deprecated.(µß™é8˜øøá-
-`squid:S1854I"=Remove this useless assignment to local variable "cellStyle".(Ğ½åæıÿÿÿÿ8áµÜÜä-
-nsquid:CommentedOutCodeLineX"<This block of commented-out lines of code should be removed.(ÿûÿÿÿÿ8áµÜÜä-
-nsquid:S2095Š"JUse try-with-resources or close this "XSSFWorkbook" in a "finally" clause.(Åù…øÿÿÿÿ8˜øøá-
-Psquid:S1068"2Remove this unused "DATE_FORMATTER" private field.(“ıÑÔ8Ñƒ°™á-

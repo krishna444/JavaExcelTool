@@ -1,9 +1,0 @@
-
-qsquid:UselessImportCheck"ARemove this unused import 'org.apache.poi.ss.usermodel.Workbook'.(°ûâìÿÿÿÿÿ8©®¾•á-
-msquid:UselessImportCheck	"=Remove this unused import 'org.apache.poi.ss.usermodel.Cell'.(éÊˆüÿÿÿÿ8©®¾•á-
-wsquid:UselessImportCheck"GRemove this unused import 'org.apache.poi.xssf.usermodel.XSSFWorkbook'.(Œ¦ƒëşÿÿÿÿ8©®¾•á-
-µ%squid:RedundantThrowsDeclarationCheck"xRemove the declaration of thrown exception 'java.io.FileNotFoundException' which is a subclass of 'java.io.IOException'.(ºşıƒıÿÿÿÿ8©®¾•á-
-gsquid:UselessImportCheck
-"<Remove this unused import 'org.apache.poi.ss.usermodel.Row'.(›Ü…8©®¾•á-
-nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ú»¹Åúÿÿÿÿ8Î‚ıæ-
-nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÇÌ¾ûÿÿÿÿ8ëÃ¯Òæ-
