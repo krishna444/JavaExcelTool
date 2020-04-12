@@ -1,5 +1,4 @@
-/.project
-/.classpath
-/Taetigkeitsnachweis_*.xlsx
+Taetigkeitsnachweis_*.xlsx
+Template.xlsx
 .idea
 target
