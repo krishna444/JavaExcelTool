@@ -61,7 +61,7 @@ public class TimeSheet {
          //Holidays
          if (calendar.get(Calendar.DAY_OF_WEEK) == Calendar.SATURDAY || calendar.get(Calendar.DAY_OF_WEEK) == Calendar.SUNDAY) {
             for (int j = 2; j <= 6; j++) {
-               row.getCell(j).setCellValue("ll");
+               row.getCell(j).setCellValue("");
                //row.getCell(j).setCellStyle(row.getCell(j).getCellStyle());
                row.getCell(j).setCellFormula(null);
             }
